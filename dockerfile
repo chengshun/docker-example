@@ -1,4 +1,4 @@
-FROM node: 12.11.0-slim
+FROM node:12
 WORKDIR /app
 COPY . /app
 EXPOSE 80
