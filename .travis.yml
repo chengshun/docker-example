@@ -8,5 +8,5 @@ before_install:
 script:
   - npm run build
   - echo "$DOCKER_PASSWORD" | docker login -u "$DOCKER_USERNAME" --password-stdin
-  - docker build -t cshun/test-project:latest .
+  - docker tag cshun/test-project:latest
   - docker push cshun/test-project:latest
